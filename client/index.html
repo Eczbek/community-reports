@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="./assets/icon.png" />
+    <title>
+      Community Reports
+    </title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./client.js" type="module" defer>
+    </script>
+  </head>
+  <div id="post-creator">
+    <!-- 		  <button id='cancel-post'>
+Cancel
+</button> -->
+    <h2>Create Post
+    </h2>
+    <p>
+      Requests
+      <select id="select-post-request">
+        <option value="Cleanup">
+          Cleanup
+        </option>
+        <option value="Repairs">
+          Repairs
+        </option>
+        <option value="Magic">
+          Magic
+        </option>
+      </select>
+      <br/> Location:
+      <input id="input-post-location" type="text" />
+      <!-- 			<button id='select-location'>
+Select Location
+</button> -->
+      <!-- 			<div id='location-selector'>
+<embed src='https://maps.google.com'></embed>
+<button id='location-selecting-done'>
+Done
+</button>
+</div> -->
+      <br/>
+      <textarea id="textarea-post-description" placeholder="Description here" cols="50" rows="5"></textarea>
+      <br/> Images:
+      <input id="input-post-images" type="file" accept="image/*" multiple/>
+      <br/>
+      <button id="button-post-send">
+        Post!
+      </button>
+    </p>
+  </div>
+  </div>
+<div id="div-filters">
+  <h2>Filter Posts
+  </h2>
+  <p>
+    Requests:
+    <select id="select-filter-request">
+      <option value="*">
+        All
+      </option>
+      <option value="Cleanup">
+        Cleanup
+      </option>
+      <option value="Repairs">
+        Repairs
+      </option>
+      <option value="Magic">
+        Magic
+      </option>
+    </select>
+    <br/> Location:
+    <input id="input-filter-location" type="text" />
+    <br/>
+    <textarea id="textarea-filter-description" placeholder="Description here" cols="50" rows="5"></textarea>
+    <br/>
+    <button id='filtered-search'>
+      Search
+    </button>
+  </p>
+</div>
+<!-- The body starts here -->
+<body>
+  <h1>
+    Community Reports
+  </h1>
+  <!--       <button id="button-creator-toggle"'>Create Post</button> -->
+  <br/>
+  <br/>
+  <!-- 		<button id="button-toggle-filtering">
+Filter Posts
+</button> -->
+  <br/>
+  <br/>
+  <!--     	------------------- View Posts ------------------- -->
+  <div id="display-posts">
+  </div>
+</body>
+</html>
